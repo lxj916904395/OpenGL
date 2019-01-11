@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DE53CF121E8942B00019B9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE53CF021E8942B00019B9F /* AppDelegate.m */; };
+		4DE53CF421E8942B00019B9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE53CF321E8942B00019B9F /* ViewController.m */; };
+		4DE53CF721E8942B00019B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53CF521E8942B00019B9F /* Main.storyboard */; };
+		4DE53CF921E8942C00019B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53CF821E8942C00019B9F /* Assets.xcassets */; };
+		4DE53CFC21E8942C00019B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53CFA21E8942C00019B9F /* LaunchScreen.storyboard */; };
+		4DE53CFF21E8942C00019B9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE53CFE21E8942C00019B9F /* main.m */; };
+		4DE53D0921E8942C00019B9F /* OpenGL_ES_006_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE53D0821E8942C00019B9F /* OpenGL_ES_006_______Tests.m */; };
+		4DE53D1421E8942C00019B9F /* OpenGL_ES_006_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE53D1321E8942C00019B9F /* OpenGL_ES_006_______UITests.m */; };
+		4DE53D2421E8945500019B9F /* skybox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53D2121E8945500019B9F /* skybox2.png */; };
+		4DE53D2521E8945500019B9F /* skybox3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53D2221E8945500019B9F /* skybox3.jpg */; };
+		4DE53D2621E8945500019B9F /* skybox.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE53D2321E8945500019B9F /* skybox.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE53D0521E8942C00019B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE53CE421E8942B00019B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE53CEB21E8942B00019B9F;
+			remoteInfo = "OpenGL-ES-006-纹理大图裁剪";
+		};
+		4DE53D1021E8942C00019B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE53CE421E8942B00019B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE53CEB21E8942B00019B9F;
+			remoteInfo = "OpenGL-ES-006-纹理大图裁剪";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DE53CEC21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-ES-006-纹理大图裁剪.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE53CEF21E8942B00019B9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DE53CF021E8942B00019B9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DE53CF221E8942B00019B9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4DE53CF321E8942B00019B9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4DE53CF621E8942B00019B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DE53CF821E8942C00019B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DE53CFB21E8942C00019B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DE53CFD21E8942C00019B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE53CFE21E8942C00019B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DE53D0421E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-ES-006-纹理大图裁剪Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE53D0821E8942C00019B9F /* OpenGL_ES_006_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OpenGL_ES_006_______Tests.m"; sourceTree = "<group>"; };
+		4DE53D0A21E8942C00019B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE53D0F21E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-ES-006-纹理大图裁剪UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE53D1321E8942C00019B9F /* OpenGL_ES_006_______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OpenGL_ES_006_______UITests.m"; sourceTree = "<group>"; };
+		4DE53D1521E8942C00019B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE53D2121E8945500019B9F /* skybox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox2.png; sourceTree = "<group>"; };
+		4DE53D2221E8945500019B9F /* skybox3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox3.jpg; sourceTree = "<group>"; };
+		4DE53D2321E8945500019B9F /* skybox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE53CE921E8942B00019B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0121E8942C00019B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0C21E8942C00019B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE53CE321E8942B00019B9F = {
+			isa = PBXGroup;
+			children = (
+				4DE53CEE21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */,
+				4DE53D0721E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests */,
+				4DE53D1221E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests */,
+				4DE53CED21E8942B00019B9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE53CED21E8942B00019B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE53CEC21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪.app */,
+				4DE53D0421E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests.xctest */,
+				4DE53D0F21E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE53CEE21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */ = {
+			isa = PBXGroup;
+			children = (
+				4DE53D2321E8945500019B9F /* skybox.png */,
+				4DE53D2121E8945500019B9F /* skybox2.png */,
+				4DE53D2221E8945500019B9F /* skybox3.jpg */,
+				4DE53CEF21E8942B00019B9F /* AppDelegate.h */,
+				4DE53CF021E8942B00019B9F /* AppDelegate.m */,
+				4DE53CF221E8942B00019B9F /* ViewController.h */,
+				4DE53CF321E8942B00019B9F /* ViewController.m */,
+				4DE53CF521E8942B00019B9F /* Main.storyboard */,
+				4DE53CF821E8942C00019B9F /* Assets.xcassets */,
+				4DE53CFA21E8942C00019B9F /* LaunchScreen.storyboard */,
+				4DE53CFD21E8942C00019B9F /* Info.plist */,
+				4DE53CFE21E8942C00019B9F /* main.m */,
+			);
+			path = "OpenGL-ES-006-纹理大图裁剪";
+			sourceTree = "<group>";
+		};
+		4DE53D0721E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE53D0821E8942C00019B9F /* OpenGL_ES_006_______Tests.m */,
+				4DE53D0A21E8942C00019B9F /* Info.plist */,
+			);
+			path = "OpenGL-ES-006-纹理大图裁剪Tests";
+			sourceTree = "<group>";
+		};
+		4DE53D1221E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE53D1321E8942C00019B9F /* OpenGL_ES_006_______UITests.m */,
+				4DE53D1521E8942C00019B9F /* Info.plist */,
+			);
+			path = "OpenGL-ES-006-纹理大图裁剪UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DE53CEB21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE53D1821E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪" */;
+			buildPhases = (
+				4DE53CE821E8942B00019B9F /* Sources */,
+				4DE53CE921E8942B00019B9F /* Frameworks */,
+				4DE53CEA21E8942B00019B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-ES-006-纹理大图裁剪";
+			productName = "OpenGL-ES-006-纹理大图裁剪";
+			productReference = 4DE53CEC21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DE53D0321E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE53D1B21E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪Tests" */;
+			buildPhases = (
+				4DE53D0021E8942C00019B9F /* Sources */,
+				4DE53D0121E8942C00019B9F /* Frameworks */,
+				4DE53D0221E8942C00019B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE53D0621E8942C00019B9F /* PBXTargetDependency */,
+			);
+			name = "OpenGL-ES-006-纹理大图裁剪Tests";
+			productName = "OpenGL-ES-006-纹理大图裁剪Tests";
+			productReference = 4DE53D0421E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DE53D0E21E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE53D1E21E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪UITests" */;
+			buildPhases = (
+				4DE53D0B21E8942C00019B9F /* Sources */,
+				4DE53D0C21E8942C00019B9F /* Frameworks */,
+				4DE53D0D21E8942C00019B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE53D1121E8942C00019B9F /* PBXTargetDependency */,
+			);
+			name = "OpenGL-ES-006-纹理大图裁剪UITests";
+			productName = "OpenGL-ES-006-纹理大图裁剪UITests";
+			productReference = 4DE53D0F21E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE53CE421E8942B00019B9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					4DE53CEB21E8942B00019B9F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4DE53D0321E8942C00019B9F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4DE53CEB21E8942B00019B9F;
+					};
+					4DE53D0E21E8942C00019B9F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4DE53CEB21E8942B00019B9F;
+					};
+				};
+			};
+			buildConfigurationList = 4DE53CE721E8942B00019B9F /* Build configuration list for PBXProject "OpenGL-ES-006-纹理大图裁剪" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DE53CE321E8942B00019B9F;
+			productRefGroup = 4DE53CED21E8942B00019B9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE53CEB21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */,
+				4DE53D0321E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪Tests */,
+				4DE53D0E21E8942C00019B9F /* OpenGL-ES-006-纹理大图裁剪UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE53CEA21E8942B00019B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE53D2421E8945500019B9F /* skybox2.png in Resources */,
+				4DE53D2521E8945500019B9F /* skybox3.jpg in Resources */,
+				4DE53CFC21E8942C00019B9F /* LaunchScreen.storyboard in Resources */,
+				4DE53CF921E8942C00019B9F /* Assets.xcassets in Resources */,
+				4DE53CF721E8942B00019B9F /* Main.storyboard in Resources */,
+				4DE53D2621E8945500019B9F /* skybox.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0221E8942C00019B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0D21E8942C00019B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE53CE821E8942B00019B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE53CF421E8942B00019B9F /* ViewController.m in Sources */,
+				4DE53CFF21E8942C00019B9F /* main.m in Sources */,
+				4DE53CF121E8942B00019B9F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0021E8942C00019B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE53D0921E8942C00019B9F /* OpenGL_ES_006_______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE53D0B21E8942C00019B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE53D1421E8942C00019B9F /* OpenGL_ES_006_______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE53D0621E8942C00019B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE53CEB21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */;
+			targetProxy = 4DE53D0521E8942C00019B9F /* PBXContainerItemProxy */;
+		};
+		4DE53D1121E8942C00019B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE53CEB21E8942B00019B9F /* OpenGL-ES-006-纹理大图裁剪 */;
+			targetProxy = 4DE53D1021E8942C00019B9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DE53CF521E8942B00019B9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE53CF621E8942B00019B9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DE53CFA21E8942C00019B9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE53CFB21E8942C00019B9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DE53D1621E8942C00019B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DE53D1721E8942C00019B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DE53D1921E8942C00019B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DE53D1A21E8942C00019B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DE53D1C21E8942C00019B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-ES-006-纹理大图裁剪.app/OpenGL-ES-006-纹理大图裁剪";
+			};
+			name = Debug;
+		};
+		4DE53D1D21E8942C00019B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-ES-006-纹理大图裁剪.app/OpenGL-ES-006-纹理大图裁剪";
+			};
+			name = Release;
+		};
+		4DE53D1F21E8942C00019B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenGL-ES-006-纹理大图裁剪";
+			};
+			name = Debug;
+		};
+		4DE53D2021E8942C00019B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OpenGL-ES-006-纹理大图裁剪UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES-006-------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenGL-ES-006-纹理大图裁剪";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE53CE721E8942B00019B9F /* Build configuration list for PBXProject "OpenGL-ES-006-纹理大图裁剪" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE53D1621E8942C00019B9F /* Debug */,
+				4DE53D1721E8942C00019B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE53D1821E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE53D1921E8942C00019B9F /* Debug */,
+				4DE53D1A21E8942C00019B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE53D1B21E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE53D1C21E8942C00019B9F /* Debug */,
+				4DE53D1D21E8942C00019B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE53D1E21E8942C00019B9F /* Build configuration list for PBXNativeTarget "OpenGL-ES-006-纹理大图裁剪UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE53D1F21E8942C00019B9F /* Debug */,
+				4DE53D2021E8942C00019B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DE53CE421E8942B00019B9F /* Project object */;
+}
