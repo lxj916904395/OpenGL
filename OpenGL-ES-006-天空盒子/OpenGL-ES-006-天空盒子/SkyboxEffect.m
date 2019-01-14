@@ -8,6 +8,7 @@
 
 #import "SkyboxEffect.h"
 
+//立方体顶点坐标数
 const static int vertex_num = 24;
 const static int index_num = 2*6+2;
 @implementation SkyboxEffect{

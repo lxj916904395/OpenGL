@@ -42,6 +42,18 @@
 }
 
 - (void)setup{
+    
+    //旋转角度
+    angle = 5;
+    
+    //相机(观察者)在世界坐标系的位置 第一组:就是眼睛的位置
+    eyePosition = GLKVector3Make(0, 10, 0);
+    //观察者观察的物体在世界坐标系的位置 第二组:就是眼睛所看物体的位置
+    lookAtPosition = GLKVector3Make(0, 0, 0);
+    //观察者向上的方向的世界坐标系的方向.第三组:就是头顶朝向的方向(因为你可以头歪着的状态看物体)
+    upPosition = GLKVector3Make(0,1, 0);
+    
+    
     _context = [[EAGLContext alloc] initWithAPI:(kEAGLRenderingAPIOpenGLES3)];
     GLKView *view = (GLKView*)self.view;
     view.context = _context;
@@ -49,29 +61,22 @@
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     [EAGLContext setCurrentContext:_context];
     
-    
-    //相机(观察者)在世界坐标系的位置 第一组:就是眼睛的位置
-    eyePosition = GLKVector3Make(0, 10, 10);
-    //观察者观察的物体在世界坐标系的位置 第二组:就是眼睛所看物体的位置
-    lookAtPosition = GLKVector3Make(0, 0, 0);
-    //观察者向上的方向的世界坐标系的方向.第三组:就是头顶朝向的方向(因为你可以头歪着的状态看物体)
-    upPosition = GLKVector3Make(0,1, 0);
-    
     [self setupBaseEffect];
 
-    
-    //旋转角度
-    angle = 5;
-    
-    [self setMatrix];
-    
-    GLuint buffer;
+    [self setupSkyEffect];
+
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
+}
+
+- (void)setBuffer{
     
     //==============顶点数据
     
     glGenVertexArraysOES(1, &positionBuffer);
     glBindVertexArrayOES(positionBuffer);
     
+    GLuint buffer;
     glGenBuffers(1, &buffer);
     //将缓存对象对应到相应的缓存上
     /*
@@ -121,7 +126,7 @@
      stride:步长
      ptr:偏移量
      */
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*0, (GLfloat*)NULL+0);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*3, (GLfloat*)NULL+0);
     
     //===============绑定法线数据
     
@@ -130,14 +135,9 @@
     glBufferData(GL_ARRAY_BUFFER, sizeof(starshipNormals), starshipNormals, GL_DYNAMIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribNormal);
-    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*0, (GLfloat*)NULL+0);
-    
- 
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_CULL_FACE);
-    [self setupSkyEffect];
-
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*3, (GLfloat*)NULL+0);
 }
+
 
 //baseeffect 用于显示飞机
 - (void)setupBaseEffect{
@@ -149,12 +149,16 @@
     //镜面反射颜色
     _baseEffect.light0.specularColor = GLKVector4Make(0.25f, 0.25f, 0.25f, 1.0f);
     //光源位置
-    _baseEffect.light0.position = GLKVector4Make(0.0f, 0.0f, 2.0f, 1.0f);
+    _baseEffect.light0.position = GLKVector4Make(0.0f, 1.0f, 0.0f, 1.0f);
     //反射光的颜色
     //光照策略
     //GLKLightingTypePerVertex:表示在三角形的每个顶点执行照明计算，然后在三角形中插值。
     //GLKLightingTypePerPixel指示对照明计算的输入在三角形内进行插值，并在每个片段上执行照明计算。
-    _baseEffect.lightingType = GLKLightingTypePerPixel;
+    _baseEffect.lightingType = GLKLightingTypePerVertex;
+    
+    [self setBuffer];
+    [self setMatrix];
+  
 }
 
 //skyeffect 用于显示天空
@@ -162,7 +166,7 @@
     _skyEffect = [[SkyboxEffect alloc] init];
     
     //获取纹理贴图信息
-    NSString *path = [ImageTailor imageTailorWithFile:@"skybox2" rowCount:4];
+    NSString *path = [ImageTailor imageTailorWithFile:@"skybox3.jpg" rowCount:4];
     GLKTextureInfo *textureInfo = [GLKTextureLoader cubeMapWithContentsOfFile:path options:nil error:nil];
     
     _skyEffect.textureCube.name = textureInfo.name;
@@ -170,8 +174,7 @@
     
     _skyEffect.zsize =
     _skyEffect.ysize =
-    _skyEffect.xsize = 6;
-   // [_skyEffect preparDraw];
+    _skyEffect.xsize = 3;
 }
 
 
