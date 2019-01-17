@@ -1,1 +1,1 @@
-# OpenGL
+# OpenGL练习合集
