@@ -20,6 +20,18 @@
 		4D10482E21F16F2D00E645C9 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4D10482D21F16F2D00E645C9 /* shaderv.glsl */; };
 		4D10483021F16F3C00E645C9 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4D10482F21F16F3C00E645C9 /* shaderf.glsl */; };
 		4D10483321F1A10100E645C9 /* ZFVertexAttribsBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D10483221F1A10100E645C9 /* ZFVertexAttribsBuffer.m */; };
+		4D24E9EF21F591C40040DA5B /* ZFVertexAttribsBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D10483221F1A10100E645C9 /* ZFVertexAttribsBuffer.m */; };
+		4D24E9F021F591C40040DA5B /* ParticleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D10482B21F16D0600E645C9 /* ParticleEffect.m */; };
+		4D24E9F121F591C40040DA5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1047FA21F16B2400E645C9 /* ViewController.m */; };
+		4D24E9F221F591C40040DA5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D10480521F16B2600E645C9 /* main.m */; };
+		4D24E9F321F591C40040DA5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1047F721F16B2400E645C9 /* AppDelegate.m */; };
+		4D24E9F621F591C40040DA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D10480121F16B2600E645C9 /* LaunchScreen.storyboard */; };
+		4D24E9F721F591C40040DA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1047FF21F16B2600E645C9 /* Assets.xcassets */; };
+		4D24E9F821F591C40040DA5B /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D10482821F16B7A00E645C9 /* ball.png */; };
+		4D24E9F921F591C40040DA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1047FC21F16B2400E645C9 /* Main.storyboard */; };
+		4D24E9FA21F591C40040DA5B /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4D10482D21F16F2D00E645C9 /* shaderv.glsl */; };
+		4D24E9FB21F591C40040DA5B /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4D10482F21F16F3C00E645C9 /* shaderf.glsl */; };
+		4D24EA0421F596270040DA5B /* ParticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24EA0221F595A60040DA5B /* ParticleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +75,10 @@
 		4D10482F21F16F3C00E645C9 /* shaderf.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shaderf.glsl; sourceTree = "<group>"; };
 		4D10483121F1A10100E645C9 /* ZFVertexAttribsBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFVertexAttribsBuffer.h; sourceTree = "<group>"; };
 		4D10483221F1A10100E645C9 /* ZFVertexAttribsBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFVertexAttribsBuffer.m; sourceTree = "<group>"; };
+		4D24E9FF21F591C40040DA5B /* iOS原生粒子.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS原生粒子.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D24EA0021F591C40040DA5B /* OpenGL-ES-粒子 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OpenGL-ES-粒子 copy-Info.plist"; path = "/Users/zhongding/Documents/iOS学习demo/OpenGL/OpenGL-ES-粒子/OpenGL-ES-粒子 copy-Info.plist"; sourceTree = "<absolute>"; };
+		4D24EA0121F595A60040DA5B /* ParticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleViewController.h; sourceTree = "<group>"; };
+		4D24EA0221F595A60040DA5B /* ParticleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D24E9F421F591C40040DA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +120,7 @@
 				4D10480E21F16B2600E645C9 /* OpenGL-ES-粒子Tests */,
 				4D10481921F16B2600E645C9 /* OpenGL-ES-粒子UITests */,
 				4D1047F421F16B2400E645C9 /* Products */,
+				4D24EA0021F591C40040DA5B /* OpenGL-ES-粒子 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +130,7 @@
 				4D1047F321F16B2400E645C9 /* OpenGL-ES-粒子.app */,
 				4D10480B21F16B2600E645C9 /* OpenGL-ES-粒子Tests.xctest */,
 				4D10481621F16B2600E645C9 /* OpenGL-ES-粒子UITests.xctest */,
+				4D24E9FF21F591C40040DA5B /* iOS原生粒子.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +154,8 @@
 				4D10482F21F16F3C00E645C9 /* shaderf.glsl */,
 				4D10483121F1A10100E645C9 /* ZFVertexAttribsBuffer.h */,
 				4D10483221F1A10100E645C9 /* ZFVertexAttribsBuffer.m */,
+				4D24EA0121F595A60040DA5B /* ParticleViewController.h */,
+				4D24EA0221F595A60040DA5B /* ParticleViewController.m */,
 			);
 			path = "OpenGL-ES-粒子";
 			sourceTree = "<group>";
@@ -207,6 +234,23 @@
 			productReference = 4D10481621F16B2600E645C9 /* OpenGL-ES-粒子UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4D24E9ED21F591C40040DA5B /* iOS原生粒子 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D24E9FC21F591C40040DA5B /* Build configuration list for PBXNativeTarget "iOS原生粒子" */;
+			buildPhases = (
+				4D24E9EE21F591C40040DA5B /* Sources */,
+				4D24E9F421F591C40040DA5B /* Frameworks */,
+				4D24E9F521F591C40040DA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS原生粒子";
+			productName = "OpenGL-ES-粒子";
+			productReference = 4D24E9FF21F591C40040DA5B /* iOS原生粒子.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +288,7 @@
 				4D1047F221F16B2400E645C9 /* OpenGL-ES-粒子 */,
 				4D10480A21F16B2600E645C9 /* OpenGL-ES-粒子Tests */,
 				4D10481521F16B2600E645C9 /* OpenGL-ES-粒子UITests */,
+				4D24E9ED21F591C40040DA5B /* iOS原生粒子 */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +321,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D24E9F521F591C40040DA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D24E9F621F591C40040DA5B /* LaunchScreen.storyboard in Resources */,
+				4D24E9F721F591C40040DA5B /* Assets.xcassets in Resources */,
+				4D24E9F821F591C40040DA5B /* ball.png in Resources */,
+				4D24E9F921F591C40040DA5B /* Main.storyboard in Resources */,
+				4D24E9FA21F591C40040DA5B /* shaderv.glsl in Resources */,
+				4D24E9FB21F591C40040DA5B /* shaderf.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,6 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D10481B21F16B2600E645C9 /* OpenGL_ES___UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D24E9EE21F591C40040DA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D24EA0421F596270040DA5B /* ParticleViewController.m in Sources */,
+				4D24E9EF21F591C40040DA5B /* ZFVertexAttribsBuffer.m in Sources */,
+				4D24E9F021F591C40040DA5B /* ParticleEffect.m in Sources */,
+				4D24E9F121F591C40040DA5B /* ViewController.m in Sources */,
+				4D24E9F221F591C40040DA5B /* main.m in Sources */,
+				4D24E9F321F591C40040DA5B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,13 +530,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2G776CNGV;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TargetType=1",
+					"DEBUG=1",
+				);
 				INFOPLIST_FILE = "OpenGL-ES-粒子/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES---";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,13 +553,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2G776CNGV;
+				GCC_PREPROCESSOR_DEFINITIONS = "TargetType=1";
 				INFOPLIST_FILE = "OpenGL-ES-粒子/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES---";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,6 +638,48 @@
 			};
 			name = Release;
 		};
+		4D24E9FD21F591C40040DA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2G776CNGV;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=2",
+					"$(inherited)",
+					"TargetType=2",
+				);
+				INFOPLIST_FILE = "OpenGL-ES-粒子 copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES---iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D24E9FE21F591C40040DA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2G776CNGV;
+				GCC_PREPROCESSOR_DEFINITIONS = "TargetType=2";
+				INFOPLIST_FILE = "OpenGL-ES-粒子 copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jie.OpenGL-ES---iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +715,15 @@
 			buildConfigurations = (
 				4D10482621F16B2600E645C9 /* Debug */,
 				4D10482721F16B2600E645C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D24E9FC21F591C40040DA5B /* Build configuration list for PBXNativeTarget "iOS原生粒子" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D24E9FD21F591C40040DA5B /* Debug */,
+				4D24E9FE21F591C40040DA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

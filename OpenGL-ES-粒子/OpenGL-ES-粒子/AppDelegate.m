@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ParticleViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -15,7 +15,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSLog(@"===%d",TargetType);
+    if (TargetType == 2) {
+        
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        
+        ParticleViewController *vc = [[ParticleViewController alloc] init];
+        self.window.rootViewController = vc;
+        
+        [self.window makeKeyAndVisible];
+    }
+    
     return YES;
 }
 

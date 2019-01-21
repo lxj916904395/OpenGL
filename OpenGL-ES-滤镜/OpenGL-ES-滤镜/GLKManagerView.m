@@ -9,8 +9,11 @@
 #import "GLKManagerView.h"
 #import "ZFView.h"
 
+#import <AVFoundation/AVFoundation.h>
+
 @interface GLKManagerView ()
 @property (strong ,nonatomic) ZFView *zfView;
+@property(strong ,nonatomic) UIImage *image;
 
 @end
 
@@ -18,7 +21,6 @@
 
 - (void)awakeFromNib{
     [super awakeFromNib];
-    
     [self setupView];
 }
 
@@ -32,12 +34,28 @@
     [_zfView setTemperatureValue:temperature];
 }
 
-- (void)setTextureImage:(UIImage*)immage{
-    [_zfView setTextureImage:immage];
+- (void)setTextureImage:(UIImage*)image{
+    self.image = image;
+    [_zfView setTextureImage:image];
+    [self resetFrame];
+}
+
+- (void)resetFrame{
+    
+    CGSize imagesize = self.image.size;
+    
+    //返回一个适配屏幕大小的新frame
+    CGRect frame = AVMakeRectWithAspectRatioInsideRect(imagesize, self.bounds);
+    
+    self.zfView.frame = frame;
+    
+    self.zfView.contentScaleFactor = imagesize.width/imagesize.height;
+    
 }
 
 - (void)setupView{
     _zfView = [[ZFView alloc] init];
+    [self addSubview:_zfView];
 }
 
 @end

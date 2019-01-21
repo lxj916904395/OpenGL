@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setSaturationValue:(CGFloat)saturation;
 //色温值
 - (void)setTemperatureValue:(CGFloat)temperature;
-- (void)setTextureImage:(UIImage*)immage;
+- (void)setTextureImage:(UIImage*)image;
 
 @end
 

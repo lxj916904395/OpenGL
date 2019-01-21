@@ -1,8 +1,9 @@
-
+//顶点坐标
 attribute vec4 position;
 
 //纹理坐标
-uniform vec2 textureCoordinate;
+attribute vec2 textureCoordinate;
+
 
 varying lowp vec3 varyingCoord;
 

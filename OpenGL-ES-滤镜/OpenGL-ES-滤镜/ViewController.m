@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.managerView setTextureImage:[UIImage imageNamed:@""]];
+    [self.managerView setTextureImage:[UIImage imageNamed:@"Lena"]];
 }
 
 //色温改变
