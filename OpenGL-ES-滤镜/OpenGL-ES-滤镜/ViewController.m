@@ -2,15 +2,13 @@
 //  ViewController.m
 //  OpenGL-ES-滤镜
 //
-//  Created by lxj on 2019/1/20.
-//  Copyright © 2019 lxj. All rights reserved.
+//  Created by zhongding on 2019/1/22.
 //
 
 #import "ViewController.h"
-#import "GLKManagerView.h"
-
+#import "ManagerView.h"
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet GLKManagerView *managerView;
+@property (strong, nonatomic) IBOutlet ManagerView *manageView;
 
 @end
 
@@ -18,19 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    [self.managerView setTextureImage:[UIImage imageNamed:@"Lena"]];
+
+    self.manageView.image = [UIImage imageNamed:@"Lena"];
 }
 
-//色温改变
-- (IBAction)changeTemperature:(UISlider*)sender {
-    [_managerView setTemperatureValue:sender.value];
+- (IBAction)temperatureChange:(UISlider*)sender {
+    self.manageView.colorTempValue = sender.value;
 }
-
-//饱和度改变
-- (IBAction)changeSaturation:(UISlider*)sender {
-    [_managerView setSaturationValue:sender.value];
+- (IBAction)saturationChange:(UISlider*)sender {
+    self.manageView.saturationValue = sender.value;
 }
 
 @end

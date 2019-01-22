@@ -1,6 +1,0 @@
-platform:ios,8.0
-
-target 'OpenGL-ES-滤镜' do
-
-pod 'GPUImage'
-end
