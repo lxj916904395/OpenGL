@@ -46,12 +46,6 @@
     
     //应用于视图的比例因子
     self.glView.contentScaleFactor = imageSize.width / frame.size.width;
-    
-//    CGSize mainsize = [UIScreen mainScreen].bounds.size;
-//
-//    self.glView.frame = CGRectMake(0, (mainsize.height-mainsize.width)/2, mainsize.width, mainsize.width);
-//    self.glView.contentScaleFactor = 1;
-
 }
 
 #pragma mark - Public

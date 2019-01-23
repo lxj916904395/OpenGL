@@ -17,7 +17,6 @@
 		4D1039D621F6EFB4007DAB9B /* OpenGL_ES___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1039D521F6EFB4007DAB9B /* OpenGL_ES___UITests.m */; };
 		4D1039E521F6EFD3007DAB9B /* ManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1039E421F6EFD3007DAB9B /* ManagerView.m */; };
 		4D1039E821F6EFDD007DAB9B /* ZFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1039E721F6EFDD007DAB9B /* ZFView.m */; };
-		4D1039EA21F6F0F7007DAB9B /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1039E921F6F0F7007DAB9B /* 11.jpg */; };
 		4D1039EC21F6F5F3007DAB9B /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 4D1039EB21F6F5F3007DAB9B /* shader.vsh */; };
 		4D1039EE21F6F601007DAB9B /* shadertemp.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4D1039ED21F6F601007DAB9B /* shadertemp.fsh */; };
 		4D1039F021F6F610007DAB9B /* shadersat.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4D1039EF21F6F610007DAB9B /* shadersat.fsh */; };
@@ -62,7 +61,6 @@
 		4D1039E421F6EFD3007DAB9B /* ManagerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerView.m; sourceTree = "<group>"; };
 		4D1039E621F6EFDD007DAB9B /* ZFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFView.h; sourceTree = "<group>"; };
 		4D1039E721F6EFDD007DAB9B /* ZFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFView.m; sourceTree = "<group>"; };
-		4D1039E921F6F0F7007DAB9B /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		4D1039EB21F6F5F3007DAB9B /* shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
 		4D1039ED21F6F601007DAB9B /* shadertemp.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shadertemp.fsh; sourceTree = "<group>"; };
 		4D1039EF21F6F610007DAB9B /* shadersat.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shadersat.fsh; sourceTree = "<group>"; };
@@ -117,24 +115,23 @@
 		4D1039B021F6EFB3007DAB9B /* OpenGL-ES-滤镜 */ = {
 			isa = PBXGroup;
 			children = (
-				4D1039F121F70991007DAB9B /* Lena.png */,
-				4D1039E921F6F0F7007DAB9B /* 11.jpg */,
 				4D1039B121F6EFB3007DAB9B /* AppDelegate.h */,
 				4D1039B221F6EFB3007DAB9B /* AppDelegate.m */,
-				4D1039B421F6EFB3007DAB9B /* ViewController.h */,
-				4D1039B521F6EFB3007DAB9B /* ViewController.m */,
-				4D1039B721F6EFB3007DAB9B /* Main.storyboard */,
 				4D1039BA21F6EFB4007DAB9B /* Assets.xcassets */,
-				4D1039BC21F6EFB4007DAB9B /* LaunchScreen.storyboard */,
 				4D1039BF21F6EFB4007DAB9B /* Info.plist */,
+				4D1039BC21F6EFB4007DAB9B /* LaunchScreen.storyboard */,
+				4D1039F121F70991007DAB9B /* Lena.png */,
 				4D1039C021F6EFB4007DAB9B /* main.m */,
+				4D1039B721F6EFB3007DAB9B /* Main.storyboard */,
 				4D1039E321F6EFD3007DAB9B /* ManagerView.h */,
 				4D1039E421F6EFD3007DAB9B /* ManagerView.m */,
+				4D1039EB21F6F5F3007DAB9B /* shader.vsh */,
+				4D1039EF21F6F610007DAB9B /* shadersat.fsh */,
+				4D1039ED21F6F601007DAB9B /* shadertemp.fsh */,
+				4D1039B421F6EFB3007DAB9B /* ViewController.h */,
+				4D1039B521F6EFB3007DAB9B /* ViewController.m */,
 				4D1039E621F6EFDD007DAB9B /* ZFView.h */,
 				4D1039E721F6EFDD007DAB9B /* ZFView.m */,
-				4D1039EB21F6F5F3007DAB9B /* shader.vsh */,
-				4D1039ED21F6F601007DAB9B /* shadertemp.fsh */,
-				4D1039EF21F6F610007DAB9B /* shadersat.fsh */,
 			);
 			path = "OpenGL-ES-滤镜";
 			sourceTree = "<group>";
@@ -266,7 +263,6 @@
 				4D1039BE21F6EFB4007DAB9B /* LaunchScreen.storyboard in Resources */,
 				4D1039BB21F6EFB4007DAB9B /* Assets.xcassets in Resources */,
 				4D1039B921F6EFB3007DAB9B /* Main.storyboard in Resources */,
-				4D1039EA21F6F0F7007DAB9B /* 11.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
