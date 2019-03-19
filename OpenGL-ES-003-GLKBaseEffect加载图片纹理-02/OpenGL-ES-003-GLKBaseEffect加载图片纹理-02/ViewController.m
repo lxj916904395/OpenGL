@@ -87,7 +87,7 @@
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(50.0f), accept, 1, 15.0f);
     self.effect.transform.projectionMatrix = projectionMatrix;
     
-    GLKMatrix4 modelviewMatrix = GLKMatrix4Translate(GLKMatrix4Identity, 0, 0, -3);
+    GLKMatrix4 modelviewMatrix =  (GLKMatrix4Identity, 0, 0, -3);
     self.effect.transform.modelviewMatrix = modelviewMatrix;
     
 }
