@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    titles = @[@"灵魂出窍",@"镜像",@"电击",@"九宫格",@"模糊"];
+    titles = @[@"灵魂出窍",@"镜像",@"电击",@"九宫格",@"模糊",@"抖动"];
     
     CGFloat width = self.view.frame.size.width/4;
     

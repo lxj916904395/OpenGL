@@ -33,6 +33,8 @@
 		1876B8CB2240CB44004F9F25 /* shader_sudoku.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1876B8CA2240CB44004F9F25 /* shader_sudoku.vsh */; };
 		1876B8CE2240DA15004F9F25 /* shader_soulout.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1876B8CD2240DA15004F9F25 /* shader_soulout.fsh */; };
 		1876B8D02240DAFE004F9F25 /* shader_dim.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1876B8CF2240DAFE004F9F25 /* shader_dim.fsh */; };
+		18AA10502241DD4F00511DB1 /* shader_shake.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 18AA104F2241DD4F00511DB1 /* shader_shake.fsh */; };
+		18AA10522241E0CD00511DB1 /* shader_shake.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 18AA10512241E0CD00511DB1 /* shader_shake.vsh */; };
 		18BA6162223B4B66009DC382 /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 18BA6161223B4B66009DC382 /* shader.vsh */; };
 		18BA6164223B4B7A009DC382 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 18BA6163223B4B7A009DC382 /* shader.fsh */; };
 		18BA6167223B4DC3009DC382 /* ShaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA6166223B4DC3009DC382 /* ShaderView.m */; };
@@ -96,6 +98,8 @@
 		1876B8CA2240CB44004F9F25 /* shader_sudoku.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_sudoku.vsh; sourceTree = "<group>"; };
 		1876B8CD2240DA15004F9F25 /* shader_soulout.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_soulout.fsh; sourceTree = "<group>"; };
 		1876B8CF2240DAFE004F9F25 /* shader_dim.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_dim.fsh; sourceTree = "<group>"; };
+		18AA104F2241DD4F00511DB1 /* shader_shake.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_shake.fsh; sourceTree = "<group>"; };
+		18AA10512241E0CD00511DB1 /* shader_shake.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader_shake.vsh; sourceTree = "<group>"; };
 		18BA6161223B4B66009DC382 /* shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
 		18BA6163223B4B7A009DC382 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fsh; sourceTree = "<group>"; };
 		18BA6165223B4DC3009DC382 /* ShaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderView.h; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 				1876B8CA2240CB44004F9F25 /* shader_sudoku.vsh */,
 				1876B8CD2240DA15004F9F25 /* shader_soulout.fsh */,
 				1876B8CF2240DAFE004F9F25 /* shader_dim.fsh */,
+				18AA104F2241DD4F00511DB1 /* shader_shake.fsh */,
+				18AA10512241E0CD00511DB1 /* shader_shake.vsh */,
 			);
 			path = glsl;
 			sourceTree = "<group>";
@@ -373,6 +379,8 @@
 				185224DC2238E3FF00EA5EED /* 5.jpg in Resources */,
 				185224D92238E3FF00EA5EED /* 2.jpg in Resources */,
 				1876B88522408C5B004F9F25 /* 11.jpg in Resources */,
+				18AA10502241DD4F00511DB1 /* shader_shake.fsh in Resources */,
+				18AA10522241E0CD00511DB1 /* shader_shake.vsh in Resources */,
 				185224CD2238E3C400EA5EED /* 8.jpg in Resources */,
 				185224992238E31200EA5EED /* Main.storyboard in Resources */,
 				18BA6169223B523A009DC382 /* 9.jpg in Resources */,

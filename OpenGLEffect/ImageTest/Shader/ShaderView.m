@@ -101,8 +101,12 @@ GLfloat defaultVertexs[] = {
         case ShaderStyleDim:
             dimProgram = [ShaderProgram programWithVertext:@"shader.vsh" fragment:@"shader_dim.fsh"];
             _program = [ShaderProgram programWithVertext:@"shader.vsh" fragment:@"shader.fsh"];
-
             [self setupVBO_dim];
+            break;
+            
+        case ShaderStyleShake:
+            _program = [ShaderProgram programWithVertext:@"shader_shake.vsh" fragment:@"shader_shake.fsh"];
+            [self setVBO_Shake];
             break;
             
         default:
@@ -161,10 +165,13 @@ float getInterpolation(float input) {
             [self render_dim];
             break;
             
+       case ShaderStyleShake:
+            [self render_Shake];
+            break;
         default:
             break;
     }
-    [self render];
+
 }
 
 - (void)render{
@@ -179,6 +186,7 @@ float getInterpolation(float input) {
     }
     GLuint time = glGetUniformLocation(_program, "time");
     glUniform1f(time, linkTime);
+        [self render];
 }
 
 - (void)setupVAO_Electric{
@@ -189,6 +197,7 @@ float getInterpolation(float input) {
 - (void)render_Soulout{
     GLuint scale = glGetUniformLocation(_program, "scale");
     glUniform1f(scale, self.mScale);
+        [self render];
 }
 
 - (void)setupVAO_Soulout{
@@ -388,6 +397,30 @@ float getInterpolation(float input) {
     }
 }
 
+#pragma mark 抖动
+- (void)render_Shake{
+ 
+    
+    GLKMatrixStackRef stack = GLKMatrixStackCreate(CFAllocatorGetDefault());
+    GLKMatrixStackPush(stack);
+    
+    float scale= 1.0f+0.2f*self.mScale;
+    GLKMatrixStackScale(stack, scale, scale, 1);
+    
+    GLuint mvpMatrix = glGetUniformLocation(_program, "mvpMatrix");
+    GLKMatrix4 matrix = GLKMatrixStackGetMatrix4(stack);
+    glUniform4fv(mvpMatrix, 1,&matrix.m[0]);
+    
+    GLuint offset = glGetUniformLocation(_program, "offset");
+    glUniform1f(offset, 0.01f *self.mScale);
+    
+    [self render];
+}
+
+- (void)setVBO_Shake{
+    [self setupVAO_Soulout];
+}
+
 #pragma mark 设置顶点属性
 - (void)setupVertexAttrib{
     //获取顶点着色器属性position
@@ -403,7 +436,6 @@ float getInterpolation(float input) {
 }
 
 #pragma mark 渲染设置准备
-
 - (void)setupBuffer{
 
     //渲染缓冲区

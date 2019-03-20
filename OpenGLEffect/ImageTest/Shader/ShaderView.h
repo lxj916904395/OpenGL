@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger,ShaderStyle) {
     ShaderStyleElectric,//电击
     ShaderStyleSudoku,//九宫格
     ShaderStyleDim,//模糊
+    ShaderStyleShake,//抖动
 };
 
 @interface ShaderView : UIView
